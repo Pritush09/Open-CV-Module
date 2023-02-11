@@ -2,7 +2,9 @@ import cv2
 
 # laptop ka camera ke liye 0 
 # extrenal camera ke liye 1 
-cap = cv2.VideoCapture(0) # the 0 means the web cam 
+cap = cv2.VideoCapture(0)#,cv2.CAP.DSHOW) # the 0 means the web cam 
+""" if there is a warning then we have to add this line as an argument """
+
 # cap is an object 
 print('cap : ', cap)
 
