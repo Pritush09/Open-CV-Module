@@ -14,7 +14,7 @@ fourcc = cv2.VideoWriter_fourcc(*"XVID") #XVID  it is widely suggested to save t
 
 
 # it contains 4 parameter name, codec , fps , resolution
-output = cv2.VideoWriter("C:\\Users\mynam\Downloads\first_vid_capture.avi",fourcc,20.0,(680,480))# ,0) 
+output = cv2.VideoWriter("C:\\Users\\mynam\\Downloads\\first_vid_capture.avi",fourcc,20.0,(680,480))# ,0) 
 # if uwant to save a grey scale video then u have to tell the output that the frames which are comming are grey scalled video
 
 
