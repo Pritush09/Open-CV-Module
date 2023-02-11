@@ -19,7 +19,7 @@ print(img.shape)
 
 
 cv2.imshow('original',img) # original to show the image in this window
-cv2.waitKey(3000) # default 0 -> meaing u have to close the img 
+cv2.waitKey() # default 0 -> meaing u have to close the img 
 # this function takes time in milli seconds to hold the image on the screen
 # other vise give the time in milliseconds format 3k-> 3sec
 
