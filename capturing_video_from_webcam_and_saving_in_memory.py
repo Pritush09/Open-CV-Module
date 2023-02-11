@@ -44,6 +44,12 @@ while cap.isOpened(): # to check if the camera is opened or closed
          # if want to convert the video into the grey sacle video
          gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
          
+         
+         # if u want to flip the video u can do the same as that for the image 
+         frame = cv2.flip(frame,0) # 0 ek terike se flip karata he frames ko video ke 
+         
+         
+         
          cv2.imshow("Frame",frame)
          cv2.imshow("Gray",gray)
          
