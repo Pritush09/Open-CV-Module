@@ -15,8 +15,10 @@ while 1:
      cv2.imshow("Frame",frame)
      cv2.imshow("Gray",gray)
      
-     
-     k = cv2.waitKey(25) # to taking a key input and compare to stop the video
+     # we gave 25 as to display the frames within 25 sec
+     # jitni waitkey ki value kaam utna video fast
+     # agar zero tab sirf diaplay hoga image video ka 
+     k = cv2.waitKey(33) # to taking a key input and compare to stop the video
      
      # we did inorder to stop the video playing 
      if k==ord('s') & 0xFF: 
