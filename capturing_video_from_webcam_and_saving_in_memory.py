@@ -1,9 +1,12 @@
 import cv2
-cap = cv2.VideoCapture("C:\\Users\mynam\Downloads\Camaro SS Drifting Green Screen Footage - Trim.mp4")
+
+# laptop ka camera ke liye 0 
+# extrenal camera ke liye 1 
+cap = cv2.VideoCapture(0) # the 0 means the web cam 
 # cap is an object 
 print('cap : ', cap)
 
-while 1:
+while cap.isOpened(): # to check if the camera is opened or closed
      ret , frame = cap.read() # ret is for the knowledge that the video was read succesfully
      
      # to resize the frames 
