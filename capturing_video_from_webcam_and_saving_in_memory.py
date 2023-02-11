@@ -15,7 +15,7 @@ fourcc = cv2.VideoWriter_fourcc(*"XVID") #XVID  it is widely suggested to save t
 
 # it contains 4 parameter name, codec , fps , resolution
 output = cv2.VideoWriter("C:\\Users\mynam\Downloads\first_vid_capture.avi",fourcc,20.0,(680,480))# ,0) 
-# if uwant to save a grey scale video then u have to tell the output that the frames which are comming are grey scalled 
+# if uwant to save a grey scale video then u have to tell the output that the frames which are comming are grey scalled video
 
 
 
@@ -42,8 +42,9 @@ while cap.isOpened(): # to check if the camera is opened or closed
          cv2.imshow("Frame",frame)
          cv2.imshow("Gray",gray)
          
-         # this is to write the frames or save the video
-         output.write(frame)  # in the specified directore
+         # this is to write the frames or save the video in the specified directory
+         output.write(frame)  
+         # if u want to save the gray scalled video then just pass the gray to the required in the output container
          
          
          
