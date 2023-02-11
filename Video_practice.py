@@ -13,6 +13,7 @@ while 1:
      gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
      
      cv2.imshow("Frame",frame)
+     cv2.imshow("Gray",gray)
      
      
      k = cv2.waitKey(25) # to taking a key input and compare to stop the video
