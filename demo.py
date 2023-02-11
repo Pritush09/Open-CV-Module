@@ -29,6 +29,12 @@ print(img)
 print(img.shape)
 cv2.imshow('unchanged',img)
 
+# flip function 
+img = cv2.flip(img,1) # this takes arg which are 0, 1 , -1 
+cv2.imshow("Flipped",img)
+# this function simply flips the image in different manner
+
+
 cv2.waitKey() # default 0 -> meaing u have to close the img 
 # this function takes time in milli seconds to hold the image on the screen
 # other vise give the time in milliseconds format 3k-> 3sec
