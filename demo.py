@@ -29,14 +29,11 @@ print(img)
 print(img.shape)
 cv2.imshow('unchanged',img)
 
-
-
-
 cv2.waitKey() # default 0 -> meaing u have to close the img 
 # this function takes time in milli seconds to hold the image on the screen
 # other vise give the time in milliseconds format 3k-> 3sec
 
-cv2.destroyALLWindows()
+cv2.destroyAllWindows()
 
 
 
