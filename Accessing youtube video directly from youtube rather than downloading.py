@@ -43,6 +43,7 @@ while cap.isOpened(): # to check if the camera is opened or closed
          
          
          
+         
          cv2.imshow("Frame",frame)
          cv2.imshow("Gray",gray)
          
