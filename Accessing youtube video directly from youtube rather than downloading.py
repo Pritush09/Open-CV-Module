@@ -1,6 +1,6 @@
 import cv2
 import pafy
-import youtube_dl # we imported this as the pafy required this library in order to perform the operation
+#import youtube_dl # we imported this as the pafy required this library in order to perform the operation
 
 
 """ To access the video u have access the url of it """
@@ -12,7 +12,7 @@ data = data.getbest(preftype="mp4") # some modification with the data
 
 # laptop ka camera ke liye 0 
 # extrenal camera ke liye 1 
-cap = cv2.VideoCapture(0)#,cv2.CAP.DSHOW) # the 0 means the web cam 
+cap = cv2.VideoCapture()#,cv2.CAP.DSHOW) # the 0 means the web cam 
 """ if there is a warning then we have to add this line as an argument it arrises only due to the python versons"""
 
 
@@ -55,7 +55,7 @@ while cap.isOpened(): # to check if the camera is opened or closed
          # we gave 25 as to display the frames within at the interval of 25 mili seconds
          # jitni waitkey ki value kaam utna video fast
          # agar zero tab sirf diaplay hoga image video ka 
-         k = cv2.waitKey(25) # to taking a key input and compare to stop the video
+         k = cv2.waitKey(1) # to taking a key input and compare to stop the video
          
          # we did inorder to stop the video playing 
          if k==ord('s') & 0xFF: 
@@ -63,10 +63,4 @@ while cap.isOpened(): # to check if the camera is opened or closed
              break
          
 cap.release()
-
-
-# u have to release the ouput container which u have made inoder to doo this task without any problem ex.. the video maybe corrupt
-output.release()
-
-
 cv2.destroyAllWindows()
