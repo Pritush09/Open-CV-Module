@@ -29,5 +29,18 @@ while 1:
     f = c.cvtColor(f,c.COLOR_BGR2RGB)#this is to change the color of the image captured
     # isko rgb me convert karna pada as the opencv reads an image as BGR but in computer it we see BGR
     
+    #saving
+    output.write(f)
+    
+    c.imshow("live_recording",f)
+    
+    k = c.waitKey(25) # to taking a key input and compare to stop the video
+    
+    # we did inorder to stop the video playing 
+    if k==ord('s') & 0xFF: 
+        # this 0xff it is mask so if there is a problem while playing it will automaticaly terminate the video
+        break
     
     
+output.release()
+c.destroyAllWindows()
