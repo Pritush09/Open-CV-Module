@@ -32,7 +32,8 @@ while 1:
     #saving
     output.write(f)
     
-    c.imshow("live_recording",f)
+    c.imshow("Live_recording",f) # naam hamesha same hona chaiye 
+    # varna dikat hoga 
     
     k = c.waitKey(1) # to taking a key input and compare to stop the video
     
