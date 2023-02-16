@@ -14,6 +14,11 @@ img = cv2.line(img , (0,0) , (200,200) , (154,92,44) , 9)  # color format BGR
 img = cv2.arrowedLine(img , (0,0) , (400,460) , (154,92,44) , 9)  # color format BGR
 
 
+# Rectangle
+img = cv2.rectangle(img , (0,100) , (200,400) , (154,92,44) , 5)  # color format BGR
+
+
+
 
 cv2.imshow("img",img)
 
