@@ -34,7 +34,7 @@ while 1:
     
     c.imshow("live_recording",f)
     
-    k = c.waitKey(25) # to taking a key input and compare to stop the video
+    k = c.waitKey(1) # to taking a key input and compare to stop the video
     
     # we did inorder to stop the video playing 
     if k==ord('s') & 0xFF: 
