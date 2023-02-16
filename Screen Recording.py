@@ -2,7 +2,7 @@
 
 import cv2 as c
 import pyautogui as p
-
+import numpy as np
 
 # we will capture the resolution of aur screen 
 screen_res = p.size()  # screen ka size batadega
@@ -18,6 +18,16 @@ fourcc = c.VideoWriter_fourcc(*"XVID")
 output = c.VideoWriter(fname,fourcc,fps,screen_res)# ,0) #agar grey scale me lana he video ko
 
 
+#creating our own window #create recording module
+c.namedWindow("Live_recording",c.WINDOW_NORMAL)
+# resizing the window
+c.resizeWindow("Live_recording",(600,400))
 
-
-
+while 1:
+    img = p.screenshot()# this will continuously take the ss of screen and store it in img
+    f = np.array(img) # storing the capturedimage in an numpy array
+    f = c.cvtColor(f,c.COLOR_BGR2RGB)#this is to change the color of the image captured
+    # isko rgb me convert karna pada as the opencv reads an image as BGR but in computer it we see BGR
+    
+    
+    
