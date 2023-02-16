@@ -12,7 +12,7 @@ screen_res = p.size()  # screen ka size batadega
 fname = input("Enter the filename in which the recording will be saved (path): ")
 
 # seting the fps
-fps = 60.0
+fps = 20.0
 
 fourcc = c.VideoWriter_fourcc(*"XVID")
 output = c.VideoWriter(fname,fourcc,fps,screen_res)# ,0) #agar grey scale me lana he video ko
