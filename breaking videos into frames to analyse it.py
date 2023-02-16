@@ -1,6 +1,6 @@
 import cv2
 
-vcap = cv2.VideoCapture("C:\\Users\\mynam\\Downloads\\first_vid_capture.avi")
+vcap = cv2.VideoCapture("C:\\Users\\mynam\\Downloads\\")
 
 ret , image = vcap.read()# read the frames or video
 #this only captures the first frame of the video
@@ -20,7 +20,7 @@ while 1:
 
         
         cv2.imshow("res",image)
-        
+        print(count)
         
         count += 1
         
