@@ -15,8 +15,18 @@ img = cv2.arrowedLine(img , (0,0) , (400,460) , (154,92,44) , 9)  # color format
 
 
 # Rectangle
-img = cv2.rectangle(img , (0,100) , (200,400) , (154,92,44) , -23)  # color format BGR
+img = cv2.rectangle(img , (0,100) , (200,400) , (154,92,44) , -1)  # color format BGR
+#img = cv2.rectangle(img , (0,100) , (200,400) , (154,92,44) , 0)  # color format BGR
+
 # if the thickness is a negative number then the shape will be filled with the colour of the line 
+
+
+
+# circle img , center point  ,  radius , colour thickness
+img = cv2.circle(img , (600,400) , (200,400) , (154,92,44) , 2)  # color format BGR
+# if the thickness is a negative number then the shape will be filled with the colour of the line 
+
+
 
 
 
