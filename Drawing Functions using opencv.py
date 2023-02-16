@@ -33,10 +33,13 @@ img = cv2.circle(img , (600,400) , 70 , (154,92,44) , 5)  # color format BGR
 # FOR THE TEXT ON IMAGE
 font = cv2.FONT_ITALIC
 # this accepts  ( image  ,  text  , start_cordinaate  ,  font  ,  fontsize  ,  color  ,  thickiness  ,  linetype )
-img = cv2.putText(img , "GOKU" , (210,410) , font , 4 , (0,125,255) , 10 , cv2.LINE_AA)
+img = cv2.putText(img , "GOKU" , (210,410) , font , 2 , (0,125,255) , 5 , cv2.LINE_AA)
 
 
 
+
+# for the ellipse  (image, center_coordinates, axesLength(major axes , minor axes), angle, startAngle, endAngle, color, thickness)
+img = cv2.ellipse(img , (400,400) , (60, 40) , 90 , 90 , 270, (255,9,55) , 5) 
 
 
 
