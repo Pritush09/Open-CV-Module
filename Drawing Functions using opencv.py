@@ -5,6 +5,10 @@ img = cv2.imread("C:\\Users\\mynam\\Downloads\\goku.jpg")
 img = cv2.resize(img,(840,680))
 
 
+# using a created image by us and perform the same things on it 
+img = np.zeros([512,680,3]) # this is for black white ke liye 1 ka banao array
+
+
 # here the line accepts 5 args (img , starting , ending , color , thickiness)
 img = cv2.line(img , (0,0) , (200,200) , (154,92,44) , 9)  # color format BGR
 # inorder to get the required color goo to google and search for online colour picker
