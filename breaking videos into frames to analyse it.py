@@ -1,6 +1,6 @@
 import cv2
 
-vcap = cv2.VideoCapture("C:\\Users\\mynam\\Downloads\\")
+vcap = cv2.VideoCapture("C:\\Users\\mynam\\Downloads\\first_vid.mp4")
 
 ret , image = vcap.read()# read the frames or video
 #this only captures the first frame of the video
