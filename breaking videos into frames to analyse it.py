@@ -1,6 +1,6 @@
 import cv2
 
-vcap = cv2.VideoCapture("C:\\Users\\mynam\\Downloads\\Camaro SS Drifting Green Screen Footage.mp4")
+vcap = cv2.VideoCapture("C:\\Users\\mynam\\Downloads\\srec_test.mp4")
 
 ret , image = vcap.read()# read the frames or video
 
