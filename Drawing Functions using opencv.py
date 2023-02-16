@@ -23,7 +23,7 @@ img = cv2.rectangle(img , (0,100) , (200,400) , (154,92,44) , -1)  # color forma
 
 
 # circle img , center point  ,  radius , colour thickness
-img = cv2.circle(img , (600,400) , (200,400) , (154,92,44) , 2)  # color format BGR
+img = cv2.circle(img , (600,400) , 70 , (154,92,44) , 5)  # color format BGR
 # if the thickness is a negative number then the shape will be filled with the colour of the line 
 
 
