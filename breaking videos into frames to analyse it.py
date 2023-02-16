@@ -4,7 +4,7 @@ vcap = cv2.VideoCapture("C:\\Users\\mynam\\Downloads\\Camaro SS Drifting Green S
 
 ret , image = vcap.read()# read the frames or video
 
-count =0 
+count = 0 
 
 while 1:
     if ret == True:
