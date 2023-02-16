@@ -44,4 +44,5 @@ while 1:
     
     
 output.release()
+
 c.destroyAllWindows()
