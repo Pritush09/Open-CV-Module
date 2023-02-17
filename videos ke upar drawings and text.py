@@ -16,6 +16,11 @@ while (cap.isOpened()):
         font = cv2.FONT_HERSHEY_COMPLEX_SMALL
         # this accepts  ( image  ,  text  , start_cordinaate  ,  font  ,  fontsize  ,  color  ,  thickiness  ,  linetype )
         frame = cv2.putText(frame , "CAR DRIFT height : {} width : {}".format(cap.get(4), cap.get(3)), (210,410) , font , 1 , (0,125,255) , 2, cv2.LINE_AA)
+        
+        
+        frame = cv2.rectangle(frame , (0,100) , (200,400) , (154,92,44) , 3)  # color format BGR
+
+        
         cv2.imshow("frame",frame)
         
         if cv2.waitKey(25) & 0xFF == ord("s"):
