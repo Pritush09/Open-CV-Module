@@ -20,6 +20,7 @@ while (cap.isOpened()):
     ret , frame = cap.read()
     frame = cv2.resize(frame,(800 , 500))
     if ret == True:
+        
         font = cv2.FONT_HERSHEY_COMPLEX_SMALL
         # this accepts  ( image  ,  text  , start_cordinaate  ,  font  ,  fontsize  ,  color  ,  thickiness  ,  linetype )
         frame = cv2.putText(frame , "CAR DRIFT height : {} width : {}".format(cap.get(4), cap.get(3)), (210,410) , font , 1 , (0,125,255) , 2, cv2.LINE_AA)
