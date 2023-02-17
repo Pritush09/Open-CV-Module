@@ -2,7 +2,13 @@ import cv2
 import numpy as np
 import datetime
 
-cap = cv2.VideoCapture("C:\\Users\\mynam\\Downloads\\Camaro SS Drifting Green Screen Footage - Trim.mp4")
+# this is with the videos 
+# cap = cv2.VideoCapture("C:\\Users\\mynam\\Downloads\\Camaro SS Drifting Green Screen Footage - Trim.mp4")
+
+# this is with the webcam
+cap = cv2.VideoCapture(0)
+
+
 
 print("Width : ",cap.get(3)) # 3 is for the width  Otherwise write cv2.CAP_PROP_FRAME_WIDTH
 print("Height : ",cap.get(4)) # 4 is for the height  Otherwise write cv2.CAP_PROP_FRAME_HEIGHT
@@ -12,6 +18,7 @@ print("Height : ",cap.get(4)) # 4 is for the height  Otherwise write cv2.CAP_PRO
 
 while (cap.isOpened()):
     ret , frame = cap.read()
+    frame = cv2.resize(frame,(800 , 500))
     if ret == True:
         font = cv2.FONT_HERSHEY_COMPLEX_SMALL
         # this accepts  ( image  ,  text  , start_cordinaate  ,  font  ,  fontsize  ,  color  ,  thickiness  ,  linetype )
