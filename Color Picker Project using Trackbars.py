@@ -16,8 +16,15 @@ s = "0 : OFF \n 1 : ON"
 cv2.createTrackbar(s , "COLOR PICKER" , 0 , 1 , c )
 
 
+""" this  c is a function which will be called in the free time when the trackbar is not being used """
+
 
 # creating for RGB
+cv2.createTrackbar('R' , "COLOR PICKER" , 0 , 255 , c )
+cv2.createTrackbar('G' , "COLOR PICKER" , 0 , 255 , c )
+cv2.createTrackbar('B', "COLOR PICKER" , 0 , 255 , c )
+
+
 
 
 
