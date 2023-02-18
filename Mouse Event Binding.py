@@ -4,6 +4,15 @@ import numpy as np
 # X , Y are the position of your cursour on the windows created with the namedWindow 
 # event is for the event performed by us like double click on either right or left  
 def draw(event , x ,y , flags , param ):
+    
+    print("X : ",x)
+    print("Y : ",y)
+    print("\n")
+    print("Flags : ",flags)
+    print("\n")
+    print("param : ",param)
+    
+    
     if event == cv2.EVENT_LBUTTONDBLCLK:
         cv2.circle(img , (x,y) , 100 , (125 , 0,255) , 4)
     elif event == cv2.EVENT_RBUTTONDBLCLK:
