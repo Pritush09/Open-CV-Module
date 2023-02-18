@@ -8,7 +8,7 @@ def draw(event , x ,y , flags , param ):
     print("X : ",x)
     print("Y : ",y)
     print("\n")
-    print("Flags : ",flags)
+    print("Flags : ",flags) # this value becomes 1 when we perform any of the task given in the if and elif statemetnt below
     print("\n")
     print("param : ",param)
     
